@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Siguiente</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_view_pager">ViewPager</string>
+    <string name="title_activity_formulario">Formulario</string>
+    <string name="formulario">Formulario</string>
+    <string name="title_activity_list_view">ListView</string>
+    <string name="comentar">Comentar</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Comprobaciones">Comprobaciones</string>
+    <string name="Lista_comentarios">Lista Comentarios</string>
+    <string name="fragment1">Fragmento seleccionado 1</string>
+    <string name="Gallery_Selected">Gallery Selected</string>
+    <string name="slides">Slides Selected</string>
+    <string name="tools">Tools Selected</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="opcion_1">Opcion 1</string>
+    <string name="opcion_2">Opcion 2</string>
+</resources>
