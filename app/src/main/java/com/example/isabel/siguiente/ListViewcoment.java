@@ -6,12 +6,14 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 
 import java.util.ArrayList;
@@ -68,11 +70,16 @@ public class ListViewcoment extends AppCompatActivity {
                     lista.add(comentario.getText().toString());
                     adaptador.notifyDataSetChanged();
                     comentario.setText("");
-                } else if ((comentario.getText().toString().equals(""))) {
+                } else if (comentario.getText().toString().equals("")) {
 
-                    new AlertDialog.Builder(ListViewcoment.this).setTitle("Error")
-                            .setMessage("Debes escribir algo")
-                            .setPositiveButton("OK", null).show();
+                 /*((comentario.getText().toString().equals(" "))||(comentario.getText().toString().isEmpty()))*/
+
+                    comentario.setError("Debes ingresar un valor");
+//                    Toast.makeText(this, "Ingresa un valor", Toast.LENGTH_SHORT).show();
+//                    return;
+//                    new AlertDialog.Builder(ListViewcoment.this).setTitle("Error")
+//                            .setMessage("Debes escribir algo")
+//                            .setPositiveButton("OK", null).show();
 
                 }
 

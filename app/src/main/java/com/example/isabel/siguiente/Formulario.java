@@ -42,15 +42,19 @@ public class Formulario extends AppCompatActivity {
 
                 if ((com1.getText().toString().equals(""))||((com1.getText().toString().length()<5))) {
 
-                    new AlertDialog.Builder(Formulario.this).setTitle("Error")
-                            .setMessage("Minimo 5 caracteres")
-                            .setPositiveButton("OK", null).show();
+
+                    com1.setError("Faltan caracteres");
+//                    new AlertDialog.Builder(Formulario.this).setTitle("Error")
+//                            .setMessage("Minimo 5 caracteres")
+//                            .setPositiveButton("OK", null).show();
 
                 } else if ((com2.getText().toString().equals(""))||((com2.getText().toString().length()<5))) {
 
-                    new AlertDialog.Builder(Formulario.this).setTitle("Error")
-                            .setMessage("Campo2 Minimo 5 caracteres")
-                            .setPositiveButton("OK", null).show();
+                    com2.setError("Faltan caracteres");
+
+//                    new AlertDialog.Builder(Formulario.this).setTitle("Error")
+//                            .setMessage("Campo2 Minimo 5 caracteres")
+//                            .setPositiveButton("OK", null).show();
 
                 } else {
 
