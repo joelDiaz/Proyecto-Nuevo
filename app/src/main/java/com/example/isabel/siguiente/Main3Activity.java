@@ -1,11 +1,7 @@
 package com.example.isabel.siguiente;
 
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -16,15 +12,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.example.isabel.siguiente.Viewpa1;
-
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-
-import java.util.List;
 
 public class Main3Activity extends AppCompatActivity {
 
@@ -35,14 +26,10 @@ public class Main3Activity extends AppCompatActivity {
     SectionsPagerAdapter mSectionsPagerAdapter;
 
 
-//    private ViewPager mViewPager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
-
-//        GroupRadio = (RadioGroup) findViewById(R.id.radiogroup);
         radiob1 = (RadioButton) findViewById(R.id.radio1);
         radiob2 = (RadioButton) findViewById(R.id.radio2);
         radiob3 = (RadioButton) findViewById(R.id.radio3);
@@ -127,25 +114,6 @@ public class Main3Activity extends AppCompatActivity {
 
         });
 
-
-//        GroupRadio.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-//
-//            @Override
-//            public void onCheckedChanged(RadioGroup group, int checkedId) {
-//                // TODO Auto-generated method stub
-//                if (checkedId == R.id.radio1) {
-//                              return "SECTION 1";
-//                } else if (checkedId == R.id.radio2) {
-//                    return "SECTION 2";
-//                } else if (checkedId == R.id.radio3) {
-//                    return "SECTION 3";
-//                }
-//
-//            }
-//
-//        });
-
-
     }
 
     private void showPage() {
@@ -159,6 +127,7 @@ public class Main3Activity extends AppCompatActivity {
             vistapagina.setCurrentItem(2);
         }
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
