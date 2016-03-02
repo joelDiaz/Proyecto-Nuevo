@@ -63,23 +63,25 @@ public class ListViewcoment extends AppCompatActivity {
 
 
         Comentar.setOnClickListener(new View.OnClickListener() {
+//            String qspacio= comentario.getText().toString().trim();
+
             @Override
             public void onClick(View v) {
-                if ((comentario.getText().toString().length() > 0)) {
-
-                    lista.add(comentario.getText().toString());
-                    adaptador.notifyDataSetChanged();
-                    comentario.setText("");
-                } else if (comentario.getText().toString().equals("")) {
-
-                 /*((comentario.getText().toString().equals(" "))||(comentario.getText().toString().isEmpty()))*/
-
+                if (comentario.getText().toString().trim().isEmpty()) {
                     comentario.setError("Debes ingresar un valor");
+                    comentario.setText("");
+                     /*((comentario.getText().toString().equals(" "))||(comentario.getText().toString().isEmpty()))*/
 //                    Toast.makeText(this, "Ingresa un valor", Toast.LENGTH_SHORT).show();
 //                    return;
 //                    new AlertDialog.Builder(ListViewcoment.this).setTitle("Error")
 //                            .setMessage("Debes escribir algo")
 //                            .setPositiveButton("OK", null).show();
+
+                } else {
+
+                    lista.add(comentario.getText().toString());
+                    adaptador.notifyDataSetChanged();
+                    comentario.setText("");
 
                 }
 
